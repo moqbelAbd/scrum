@@ -1,0 +1,10 @@
+name: 'scrum'
+services:
+  scrum-postgresql:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5432:5432"
