@@ -1,4 +1,4 @@
-package db.model.entity
+package com.example.scrum.db.model.entity
 
 import db.base.AuditListener
 import db.base.FullAudit

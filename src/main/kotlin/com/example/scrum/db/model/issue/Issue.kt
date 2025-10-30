@@ -1,10 +1,10 @@
-package db.model.entity
-import db.base.AuditListener
-import db.base.FullAudit
-import db.model.common.UomType
+package com.example.scrum.db.model.entity.issue
+import com.example.scrum.db.model.entity.productBacklog
+import com.example.scrum.db.model.entity.state
+import com.example.scrum.db.base.AuditListener
+import com.example.scrum.db.base.FullAudit
 import jakarta.persistence.*
-import db.model.entity.productBacklog
-import db.model.entity.state
+import jakarta.persistence.*
 
 @Entity
 @EntityListeners(AuditListener::class)
@@ -35,7 +35,7 @@ data class issue(
 
     @Column(name = "state_id")
 var state: String? = null, //enum
-@OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY)
 @JoinColumn(name = "state-id")
 var issue_state: state? = null
 

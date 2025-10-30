@@ -1,10 +1,7 @@
-package db.model.entity
-import db.base.AuditListener
+package com.example.scrum.db.model.entity.issue
+import com.example.scrum.db.model.entity.user
 import db.base.FullAudit
-import db.model.common.UomType
 import jakarta.persistence.*
-import db.model.entity.user
-import db.model.entity.issue
 
 data class issueAssigned(
     @Id
@@ -25,7 +22,7 @@ var issueId: String? = null,
     @Column(name = "task_title")
     var taskTitle: String? = null,
 
-): FullAudit()
+    ): FullAudit()
 
 
 

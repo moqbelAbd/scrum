@@ -1,8 +1,7 @@
-package db.model.entity
+package com.example.scrum.db.model.entity
 
-import db.base.AuditListener
-import db.base.FullAudit
-import db.model.common.UomType
+import com.example.scrum.db.base.AuditListener
+import com.example.scrum.db.base.FullAudit
 import jakarta.persistence.*
 
 

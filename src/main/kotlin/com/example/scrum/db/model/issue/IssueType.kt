@@ -1,9 +1,6 @@
-package db.model.entity
-import db.base.AuditListener
+package com.example.scrum.db.model.entity.issue
 import db.base.FullAudit
-import db.model.common.UomType
 import jakarta.persistence.*
-import db.model.entity.issue
 
 data class issueType(
     @Id
